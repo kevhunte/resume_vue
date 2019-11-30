@@ -27,7 +27,7 @@
 
 <script>
 // @ is an alias to /src
-//import ImageCycle from '@/components/ImgCycle.vue'
+//import ImageCycle from '@/components/ImgCycle.vue' //Not needed.
 
 export default {
   name: 'home',
