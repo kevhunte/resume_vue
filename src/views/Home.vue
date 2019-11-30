@@ -84,9 +84,7 @@ export default {
 </script>
 
 <style>
-.home {
-  height: 100%;
-}
+.home {}
 
 .imageCycle {
   /*Shared class between sliders*/
@@ -105,5 +103,6 @@ img {
   left: 0;
   right: 0;
   max-height: 200px;
+  padding: 15px;
 }
 </style>

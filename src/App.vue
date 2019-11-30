@@ -8,8 +8,15 @@
   <transition name="router-anim">
     <router-view />
   </transition>
+  <!-- Add Footer component here-->
 </div>
 </template>
+
+<script>
+export default {
+  name: 'app'
+}
+</script>
 
 <style>
 /*@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";*/
@@ -25,7 +32,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 20px;
 }
 
 #nav a {
@@ -38,9 +45,15 @@
   color: #42b983;
 }
 
+p {
+  padding: 15px;
+}
+
 .page {
-  position: fixed;
+  position: absolute;
   width: inherit;
+  display: block;
+  padding: 15px;
 }
 
 .router-anim-enter-active,
