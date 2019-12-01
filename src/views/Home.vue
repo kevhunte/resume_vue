@@ -5,7 +5,7 @@
   <div class="imageCycle slider1">
     <transition-group name="fade">
       <div v-for="i in [currentNumber]" :key="i">
-        <img @click="next" @mouseover="stopRotation" @mouseout="startRotation" :src="currentImg" alt="code snippet">
+        <img class="home-images" @click="next" @mouseover="stopRotation" @mouseout="startRotation" :src="currentImg" alt="code snippet">
       </div>
     </transition-group>
   </div>
@@ -15,7 +15,7 @@
   <div class="imageCycle slider2">
     <transition-group name="fade">
       <div v-for="i in [currentNumber]" :key="i+1">
-        <img @click="next" @mouseover="stopRotation" @mouseout="startRotation" :src="currentImg2" alt="code snippet">
+        <img class="home-images" @click="next" @mouseover="stopRotation" @mouseout="startRotation" :src="currentImg2" alt="code snippet">
       </div>
     </transition-group>
   </div>
@@ -95,7 +95,7 @@ export default {
   padding-right: 10px;
 }
 
-img {
+.home-images {
   /*Centers images within containers*/
   display: block;
   margin: 0 auto 0 auto;
