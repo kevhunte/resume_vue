@@ -28,11 +28,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   border-radius: 10px;
-  margin: 50px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 #nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 20px;
+  z-index: 99;
 }
 
 #nav a {
