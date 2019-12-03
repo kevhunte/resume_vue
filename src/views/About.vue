@@ -26,11 +26,7 @@
 </template>
 
 <style>
-.about {
-  padding-left: 50px;
-  padding-right: 50px;
-
-}
+.about {}
 
 .section-about {
   /*wraps around content*/

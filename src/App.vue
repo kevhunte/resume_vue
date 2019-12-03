@@ -57,7 +57,7 @@ p {
   position: absolute;
   width: inherit;
   display: block;
-  padding: 15px;
+  padding: 15px 50px 0 50px;
 }
 
 .router-anim-enter-active,
