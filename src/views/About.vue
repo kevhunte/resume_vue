@@ -26,6 +26,12 @@
 </template>
 
 <style>
+.about {
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
 .section-about {
   /*wraps around content*/
   overflow: auto;

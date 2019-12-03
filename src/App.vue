@@ -33,9 +33,9 @@ export default {
 
 #nav {
   position: fixed;
-  top: 0;
+  margin-top: -10px;
   width: 100%;
-  padding: 20px;
+  padding: 10px 0 0 0;
   z-index: 99;
 }
 

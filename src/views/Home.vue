@@ -93,6 +93,7 @@ export default {
   float: none;
   padding-left: 10px;
   padding-right: 10px;
+  overflow: auto;
 }
 
 .home-images {
@@ -103,6 +104,7 @@ export default {
   left: 0;
   right: 0;
   max-height: 200px;
+  max-width: 75%;
   padding: 15px;
 }
 </style>
