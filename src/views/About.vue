@@ -6,7 +6,7 @@
   </p>
   <section class="section-about">
     <div class="div-images pic1">
-      <img class="images" src="" alt="resume pic 1">
+      <img class="images" src="../assets/comptia-security.png" alt="resume pic 1">
     </div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -15,7 +15,7 @@
   </section>
   <section class="section-about">
     <div class="div-images pic2">
-      <img class="images" src="" alt="resume pic 2">
+      <img class="images" src="..//assets/logo.png" alt="resume pic 2">
     </div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -30,14 +30,14 @@
 
 .section-about {
   /*wraps around content*/
-  overflow: auto;
+  vertical-align: middle;
 }
 
 .div-images {
   height: 200px;
   width: 200px;
   display: inline-block;
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
 }
 
 .pic1 {

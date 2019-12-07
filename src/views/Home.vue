@@ -37,13 +37,15 @@ export default {
   data() {
     return {
       images: [ //different arrays for each slider. All same length for variable simplicity
-        require("../assets/js_sample.png"),
+        require("../assets/js_snippet.png"),
+        require("../assets/js_snippet2.png"),
         require("../assets/cs_sample3.png"),
         require("../assets/cs_sample.png")
       ],
       images2: [ //different arrays for each slider
         require("../assets/PythonAWS.png"),
-        require("../assets/pythonScripting.png"),
+        require("../assets/pythonOOP.png"),
+        require("../assets/pythonScripting2.png"),
         require("../assets/pythonSelenium.png")
       ],
       currentNumber: 0,
@@ -99,7 +101,7 @@ export default {
 .home-images {
   /*Centers images within containers*/
   display: block;
-  margin: 0 auto 0 auto;
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;

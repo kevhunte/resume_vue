@@ -5,6 +5,14 @@
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 
+  <p @click="showModal('LinkedIn')" @close="closeModal">
+    Click me for LinkedIn
+  </p>
+
+  <p @click="showModal('GitHub')" @close="closeModal">
+    Click me for GitHub
+  </p>
+
   <button type="button" class="btn" @click="showModal">
 
     <modal v-show="isModalVisible" @close="closeModal" :h_content="hc" :b_content="bc" :f_content="fc" />
@@ -30,7 +38,14 @@ export default {
     }
   },
   methods: {
-    showModal() {
+    showModal(site) {
+      if (site == "LinkedIn") {
+        this.hc = "Heading to LinkedIn"
+        this.bc = "Put LinkedIn logo here"
+      } else if (site == "GitHub") {
+        this.hc = "Heading to Github"
+        this.bc = "Put GitHub logo here"
+      }
       this.isModalVisible = !this.isModalVisible;
     },
     closeModal() {
