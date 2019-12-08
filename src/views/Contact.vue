@@ -13,7 +13,7 @@
     Click me for GitHub
   </a><br>
 
-  <modal v-show="isModalVisible" @close="closeModal" :h_content="hc" :b_content="bc" :f_content="fc" />
+  <modal v-show="isModalVisible" @close="closeModal" :h_content="hc" :b_content="bc" :f_content="fc" :site_link="sl" />
 
 </div>
 </template>
@@ -31,33 +31,31 @@ export default {
       isModalVisible: false,
       hc: "",
       bc: "",
-      fc: ""
+      fc: "",
+      sl: "#",
+      git: require('../assets/comptia-security.png'),
+      LI: require('../assets/logo.png')
     }
   },
   methods: {
     showModal(site) {
       if (site == "LinkedIn") {
         this.hc = "Heading to LinkedIn"
-        this.bc = "LinkedIn"
-        this.fc = "Confirmation button to LinkedIn"
+        this.bc = this.LI //'./assets/logo.png' //"LinkedIn"
+        this.fc = "Head to LinkedIn"
+        this.sl = "https://www.linkedin.com/in/kevin-hunte-818759115/"
       } else if (site == "GitHub") {
         this.hc = "Heading to Github"
-        this.bc = "GitHub"
-        this.fc = "Confirmation button to GitHub"
-      } else {
-        this.hc = ""
-        this.bc = ""
-        this.fc = ""
+        this.bc = this.git //'./assets/comptia-security.png' //"GitHub"
+        this.fc = "Head to GitHub"
+        this.sl = "https://github.com/kevhunte"
       }
-      console.log("body value - " + this.bc);
       this.isModalVisible = !this.isModalVisible;
     },
     closeModal() {
-      //console.log("initial - " + this.isModalVisible);
       if (this.isModalVisible) {
         this.isModalVisible = false;
       }
-      //console.log("after - " + this.isModalVisible);
     }
   }
 

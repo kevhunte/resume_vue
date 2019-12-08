@@ -1,7 +1,7 @@
 <template>
 <transition name="modal-anim">
   <div class="modal-backdrop">
-    <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="modal" role="dialog">
       <header class="modal-header" id="modalTitle">
         <slot name="header">
           <p>{{h_content}}</p>
@@ -15,15 +15,14 @@
       <section class="modal-body" id="modalDescription">
         <slot name="body">
           <!--Replace with real logos here-->
-          <img v-if="b_content === 'LinkedIn'" class="modal-img" src="../assets/logo.png">
-          <img v-else-if="b_content === 'GitHub'" class="modal-img" src="../assets/comptia-security.png">
+          <img v-if="b_content !== ''" class="modal-img" :src="b_content" alt="Logo">
         </slot>
       </section>
 
       <footer class="modal-class">
         <slot name="footer">
 
-          <button type="button" class="btn-green">
+          <button type="button" class="btn-green" @click="gotoSite">
             {{f_content}}
           </button>
 
@@ -42,10 +41,17 @@ export default {
     h_content: String,
     b_content: String,
     f_content: String,
+    site_link: String
   },
   methods: {
     close() {
       this.$emit('close');
+    },
+    gotoSite() {
+      if (this.site_link !== '#') {
+        window.open(this.site_link);
+        this.close();
+      }
     }
   }
 };
@@ -77,6 +83,7 @@ export default {
   background: #FFFFFF;
   box-shadow: 2px 2px 20px 1px;
   overflow: auto;
+  width: 40%;
   min-width: 250px;
   min-height: 250px;
   display: flex;
@@ -91,7 +98,7 @@ export default {
 .modal-header {
   border-bottom: 1px solid #eeeeee;
   color: #4AAE9B;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .modal-footer {
@@ -103,6 +110,12 @@ export default {
 .modal-body {
   position: relative;
   padding: 20px 10px;
+}
+
+.modal-img {
+  max-height: 175px;
+  max-width: 175px;
+
 }
 
 .modal-class {
@@ -125,6 +138,5 @@ export default {
   border: 1px solid #4AAE9B;
   border-radius: 2px;
   padding: 15px;
-  bottom: -10px;
 }
 </style>
