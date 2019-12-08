@@ -55,6 +55,7 @@ p {
 
 .page {
   position: absolute;
+  top: 50px;
   width: inherit;
   display: block;
   padding: 15px 50px 0 50px;

@@ -6,25 +6,26 @@
         <slot name="header">
           <p>{{h_content}}</p>
 
-          <!--<button type="button" class="btn-close" @click="close" aria-label="Close modal">
+          <button type="button" class="btn-close" @click="close" aria-label="Close modal">
             x
-          </button>-->
+          </button>
         </slot>
       </header>
 
       <section class="modal-body" id="modalDescription">
         <slot name="body">
-          {{b_content}}
+          <!--Replace with real logos here-->
+          <img v-if="b_content === 'LinkedIn'" class="modal-img" src="../assets/logo.png">
+          <img v-else-if="b_content === 'GitHub'" class="modal-img" src="../assets/comptia-security.png">
         </slot>
       </section>
 
       <footer class="modal-class">
         <slot name="footer">
-          <p>{{f_content}}</p>
 
-          <!--<button type="button" class="btn-green" @click.prevent="close" aria-label="Close modal">
-            Close
-          </button>-->
+          <button type="button" class="btn-green">
+            {{f_content}}
+          </button>
 
         </slot>
       </footer>
@@ -45,7 +46,6 @@ export default {
   methods: {
     close() {
       this.$emit('close');
-      console.log("Close Me!");
     }
   }
 };
@@ -76,7 +76,7 @@ export default {
 .modal {
   background: #FFFFFF;
   box-shadow: 2px 2px 20px 1px;
-  overflow-x: auto;
+  overflow: auto;
   min-width: 250px;
   min-height: 250px;
   display: flex;
@@ -105,7 +105,11 @@ export default {
   padding: 20px 10px;
 }
 
-/* .btn-close {
+.modal-class {
+  padding: 10px 0 10px 0;
+}
+
+.btn-close {
   border: none;
   font-size: 20px;
   padding: 20px;
@@ -120,5 +124,7 @@ export default {
   background: #4AAE9B;
   border: 1px solid #4AAE9B;
   border-radius: 2px;
-}*/
+  padding: 15px;
+  bottom: -10px;
+}
 </style>

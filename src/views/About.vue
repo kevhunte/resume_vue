@@ -31,6 +31,7 @@
 .section-about {
   /*wraps around content*/
   vertical-align: middle;
+  overflow: auto;
 }
 
 .div-images {
@@ -38,6 +39,7 @@
   width: 200px;
   display: inline-block;
   padding: 0 15px 0 15px;
+  overflow: auto;
 }
 
 .pic1 {
@@ -49,7 +51,7 @@
 }
 
 .images {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 180px;
+  max-width: 180px;
 }
 </style>

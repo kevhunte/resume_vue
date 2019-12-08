@@ -5,19 +5,16 @@
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 
-  <p @click="showModal('LinkedIn')" @close="closeModal">
+  <a class="externals a1" @click="showModal('LinkedIn')" @close="closeModal">
     Click me for LinkedIn
-  </p>
+  </a><br><br><br>
 
-  <p @click="showModal('GitHub')" @close="closeModal">
+  <a class="externals a2" @click="showModal('GitHub')" @close="closeModal">
     Click me for GitHub
-  </p>
+  </a><br>
 
-  <button type="button" class="btn" @click="showModal">
+  <modal v-show="isModalVisible" @close="closeModal" :h_content="hc" :b_content="bc" :f_content="fc" />
 
-    <modal v-show="isModalVisible" @close="closeModal" :h_content="hc" :b_content="bc" :f_content="fc" />
-    Click Me
-  </button>
 </div>
 </template>
 
@@ -32,27 +29,44 @@ export default {
   data() {
     return {
       isModalVisible: false,
-      hc: "Header!",
-      bc: "Body! The more data the more I extend",
-      fc: "Footer!"
+      hc: "",
+      bc: "",
+      fc: ""
     }
   },
   methods: {
     showModal(site) {
       if (site == "LinkedIn") {
         this.hc = "Heading to LinkedIn"
-        this.bc = "Put LinkedIn logo here"
+        this.bc = "LinkedIn"
+        this.fc = "Confirmation button to LinkedIn"
       } else if (site == "GitHub") {
         this.hc = "Heading to Github"
-        this.bc = "Put GitHub logo here"
+        this.bc = "GitHub"
+        this.fc = "Confirmation button to GitHub"
+      } else {
+        this.hc = ""
+        this.bc = ""
+        this.fc = ""
       }
+      console.log("body value - " + this.bc);
       this.isModalVisible = !this.isModalVisible;
     },
     closeModal() {
-      console.log("setting visibility to false");
-      this.isModalVisible = false;
+      //console.log("initial - " + this.isModalVisible);
+      if (this.isModalVisible) {
+        this.isModalVisible = false;
+      }
+      //console.log("after - " + this.isModalVisible);
     }
   }
 
 };
 </script>
+
+<style>
+.externals:hover {
+  color: #42b983;
+
+}
+</style>
