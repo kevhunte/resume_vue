@@ -98,6 +98,7 @@ export default {
 .modal-header {
   border-bottom: 1px solid #eeeeee;
   color: #4AAE9B;
+  font-weight: bold;
   justify-content: space-around;
 }
 
@@ -138,5 +139,6 @@ export default {
   border: 1px solid #4AAE9B;
   border-radius: 2px;
   padding: 15px;
+  font-weight: bold;
 }
 </style>

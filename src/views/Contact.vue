@@ -33,19 +33,19 @@ export default {
       bc: "",
       fc: "",
       sl: "#",
-      git: require('../assets/comptia-security.png'),
-      LI: require('../assets/logo.png')
+      git: require('../assets/github.svg'),
+      LI: require('../assets/LinkedIn.png')
     }
   },
   methods: {
     showModal(site) {
       if (site == "LinkedIn") {
-        this.hc = "Heading to LinkedIn"
+        this.hc = "Leave to LinkedIn?"
         this.bc = this.LI //'./assets/logo.png' //"LinkedIn"
         this.fc = "Head to LinkedIn"
         this.sl = "https://www.linkedin.com/in/kevin-hunte-818759115/"
       } else if (site == "GitHub") {
-        this.hc = "Heading to Github"
+        this.hc = "Leave to Github?"
         this.bc = this.git //'./assets/comptia-security.png' //"GitHub"
         this.fc = "Head to GitHub"
         this.sl = "https://github.com/kevhunte"
