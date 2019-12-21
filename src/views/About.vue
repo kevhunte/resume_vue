@@ -1,45 +1,53 @@
 <template>
 <div class="about page">
   <h1>About The Creator</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <p>
+    Creative, persistent, and versatile are some of the few words I use to describe myself.
+    As a software engineer, creation is at the palm of your hands - particularly in your fingers.
+    With a focus on server-side development, I am continuously improving skills in order to
+    develop, scale, and secure systems.
+
   </p>
   <section class="section-about">
     <div class="div-images pic1">
-      <img class="images" src="../assets/comptia-security.png" alt="resume pic 1">
+      <img class="images i1" src="../assets/comptia-security.png" alt="resume pic 1">
     </div>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      From earning a bachelor's degree in computer science with a concentration in security,
+      I earned my Security+ certification within one month of graduation. As of Fall 2020 I will
+      be attending the <a href="https://www.nyit.edu/">New York Institute of Technology </a> to complete a master's in Cybersecurity.
+      As an engineer by day and a graduate student by night, the learning truly never stops.
     </p>
   </section>
   <section class="section-about">
     <div class="div-images pic2">
-      <img class="images" src="..//assets/logo.png" alt="resume pic 2">
+      <img class="images i2" src="..//assets/okta.png" alt="resume pic 2">
     </div>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Moving towards the near and current future, I will be working to integrate and learn the workings of the <a href="https://developer.okta.com/">
+        Okta developer's portal.</a> My end goal is to develop a comfortable understanding of Okta's environment for authorizing access to services
+      for web apps, native apps, and other systems.
     </p>
   </section>
 </div>
 </template>
 
 <style>
-.about {}
-
 .section-about {
   /*wraps around content*/
-  vertical-align: middle;
   overflow: auto;
 }
 
 .div-images {
-  height: 200px;
+  height: 100%;
   width: 200px;
   display: inline-block;
   padding: 0 15px 0 15px;
   overflow: auto;
+}
+
+.i2 {
+  top: 50%;
 }
 
 .pic1 {
@@ -51,6 +59,7 @@
 }
 
 .images {
+  position: relative;
   max-height: 180px;
   max-width: 180px;
 }

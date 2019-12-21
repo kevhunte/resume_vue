@@ -1,8 +1,9 @@
 <template>
 <div class="contact page">
   <h1>Contact Me</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <p>
+    LinkedIn is the best way to contact me. For reference to other projects I have worked on,
+    visit my github! The source code for this site is shown there as well.
   </p>
 
   <a class="externals a1" @click="showModal('LinkedIn')" @close="closeModal">
@@ -65,6 +66,10 @@ export default {
 <style>
 .externals:hover {
   color: #42b983;
+}
 
+.contact {
+  min-width: 100%;
+  padding: 0 5px 0 5px;
 }
 </style>
