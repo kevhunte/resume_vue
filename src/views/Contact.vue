@@ -1,5 +1,5 @@
 <template>
-<div class="contact page">
+<div class="contact page" id="contact">
   <h1>Contact Me</h1>
   <p>
     LinkedIn is the best way to contact me. For reference to other projects I have worked on,

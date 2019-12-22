@@ -1,5 +1,5 @@
 <template>
-<div class="home page">
+<div class="home page" id="home">
   <h1>Creator. Explorer. Engineer</h1>
   <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <div class="imageCycle slider1">

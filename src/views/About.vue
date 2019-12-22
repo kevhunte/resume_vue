@@ -1,5 +1,5 @@
 <template>
-<div class="about page">
+<div class="about page" id="about">
   <h1>About The Creator</h1>
   <p>
     Creative, persistent, and versatile are some of the few words I use to describe myself.

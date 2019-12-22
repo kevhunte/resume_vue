@@ -8,18 +8,53 @@
   <transition name="router-anim">
     <router-view />
   </transition>
-  <!-- Add Footer component here-->
+  <Footer />
 </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Footer
+  },
+  mounted: function() {
+    //run this for current page
+    console.log(this.$route.currentRoute)
+    this.adjustFooter("home");
+  },
+  updated: async function() {
+    //console.log(this.$route);
+    await this.wait(1000); //waits for transition
+    this.adjustFooter(this.$route.name);
+  },
+  methods: {
+    adjustFooter: function(page) {
+      let footer = document.getElementById("footer");
+      let currentPageLen;
+      let offset = 80;
+      if (document.getElementById(page)) {
+        currentPageLen = document.getElementById(page).clientHeight + offset;
+        footer.style.top = currentPageLen + "px";
+      }
+    },
+    wait: function(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+  }
 }
 </script>
 
 <style>
 /*@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";*/
+#footer {
+  /*Figure out how to dynamically determine top*/
+  top: 900px;
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid #2c3e50;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
