@@ -39,7 +39,7 @@ export default {
       images: [ //different arrays for each slider. All same length for variable simplicity
         require("../assets/js_snippet.png"),
         require("../assets/js_snippet2.png"),
-        require("../assets/cs_sample3.png"),
+        require("../assets/maximize.png"),
         require("../assets/cs_sample.png")
       ],
       images2: [ //different arrays for each slider
