@@ -9,8 +9,11 @@
       </div>
     </transition-group>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <p>
+    From compiled to interpreted, picking the best framework in a given language will greatly speed up development time.
+    Java, C#, Python, and JavaScript are some of the most versatile languages that can used for a wide range of projects.
+    Above are some of the projects I have worked on across different languages. Hover over pictures to pause them,
+    and click on them to cycle through.
   </p>
   <div class="imageCycle slider2">
     <transition-group name="fade">
@@ -19,8 +22,10 @@
       </div>
     </transition-group>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <p>
+    Above are some projects across different domains:
+    Object-Oriented Design, functional programming, UI and service automation, and Server-Side development.
+    I will update this site with new content as I complete new projects.
   </p>
 </div>
 </template>
