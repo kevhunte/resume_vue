@@ -2,13 +2,14 @@
 <div id="app">
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/contact">Contact</router-link>
+    <router-link to="/about">About</router-link>
+    <!--|
+    <router-link to="/contact">Contact</router-link>-->
   </div>
   <transition name="router-anim">
     <router-view />
   </transition>
-  <Footer />
+  <Footer header1="Contact & Projects" />
 </div>
 </template>
 
@@ -54,6 +55,7 @@ export default {
   width: 100%;
   position: absolute;
   border-top: 1px solid #2c3e50;
+  padding: 0 0 15px 0;
 }
 
 #app {

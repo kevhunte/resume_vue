@@ -1,31 +1,39 @@
 <template>
 <div id="footer">
-  <p>
-    For a guide and recipes on how to configure / customize this project,<br>
-    check out the
-    <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-  </p>
-  <h3>Installed CLI Plugins</h3>
+  <h3> {{header1}}</h3>
   <ul>
-    <li><a href="#" target="_blank" rel="noopener">babel</a></li>
-    <li><a href="#" target="_blank" rel="noopener">typescript</a></li>
+    <li><a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/kevhunte" target="_blank" rel="noopener">Github</a></li>
   </ul>
-  <h3>Essential Links</h3>
+  <h3 v-if="projects.length > 0">Recent Projects</h3>
   <ul>
-    <li><a href="#">Core Docs</a></li>
-    <li><a href="#">Forum</a></li>
-  </ul>
-  <h3>Ecosystem</h3>
-  <ul>
-    <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
-    <li><a href="#" target="_blank" rel="noopener">vuex</a></li>
+    <!--populate li with each project in list - p.URL and p.Text-->
+    <li><a v-for="p in projects" :key=p href="#">Core Docs</a></li>
   </ul>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data() {
+    return {
+      projects: []
+    }
+  },
+  props: {
+    header1: String,
+    header2: String
+  },
+  mounted: function() {
+    this.getProjects();
+  },
+  methods: {
+    getProjects: function() { //add async modifier when done
+      //fetch data and put in this.projects
+      console.log('got data');
+    }
+  }
 }
 </script>
 
