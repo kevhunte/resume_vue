@@ -36,10 +36,10 @@ export default {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log('body: ', data.body);
+        //console.log('body: ', data.body);
         this.projects = data.body;
       } catch (e) {
-        console.error(e);
+        //console.error(e);
       }
     }
   }
