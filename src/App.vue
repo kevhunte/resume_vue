@@ -9,7 +9,7 @@
   <transition name="router-anim">
     <router-view />
   </transition>
-  <Footer header1="Contact & Projects" />
+  <Footer header1="Contact & Projects" url='https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev' />
 </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
   },
   mounted: function() {
     //run this for current page
-    console.log(this.$route.currentRoute)
+    //console.log(this.$route.currentRoute)
     this.adjustFooter("home");
   },
   updated: async function() {

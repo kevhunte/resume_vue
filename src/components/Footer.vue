@@ -8,7 +8,7 @@
   <h3 v-if="projects.length > 0">Recent Projects</h3>
   <ul>
     <!--populate li with each project in list - p.URL and p.Text-->
-    <li><a v-for="p in projects" :key=p href="#">Core Docs</a></li>
+    <li v-for="p in projects" :key=p.id><a :href="p.URL" target="_blank" rel="noopener">{{p.Text}}</a></li>
   </ul>
 </div>
 </template>
@@ -23,15 +23,24 @@ export default {
   },
   props: {
     header1: String,
-    header2: String
+    header2: String,
+    url: String
   },
   mounted: function() {
     this.getProjects();
   },
   methods: {
-    getProjects: function() { //add async modifier when done
-      //fetch data and put in this.projects
-      console.log('got data');
+    getProjects: async function() {
+      const url = this.url;
+      //console.log(url);
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log('body: ', data.body);
+        this.projects = data.body;
+      } catch (e) {
+        console.error(e);
+      }
     }
   }
 }
