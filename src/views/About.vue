@@ -24,10 +24,16 @@
       <img class="images i2" src="..//assets/okta.png" alt="resume pic 2">
     </div>
     <p>
-      Moving towards the near and current future, I will be working to integrate Okta into my personal projects. The best wway to learn is to create!
+      Moving towards the near and current future, I will be working to integrate Okta into my personal projects. The best way to learn is to create!
       I started by watching tutorials and reviewing documentation from <a href="https://developer.okta.com/">Okta developer's portal.</a>
-      My end goal is to develop a comfortable understanding of Okta's environment for authorizing access to services
-      for web apps, native apps, and other systems.
+      My end goal is to develop a comfortable and working understanding of Okta's API for authorizing access to services
+      for user agents and other systems.
+    </p>
+  </section>
+  <section class="section-about">
+    <p>
+      I am always working new projects. The best way to stay up to date is to check the repositories below.
+      The information in the footer will update to highlight my latest creations.
     </p>
   </section>
 </div>

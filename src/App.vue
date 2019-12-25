@@ -21,7 +21,6 @@ export default {
     Footer
   },
   mounted: function() {
-    //run this for current page
     //console.log(this.$route.currentRoute)
     this.adjustFooter("home");
   },

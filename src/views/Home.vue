@@ -25,14 +25,13 @@
   <p>
     Above are some projects across different domains:
     Object-Oriented Design, functional programming, UI and service automation, and Server-Side development.
-    I will update this site with new content as I complete new projects.
+    As time grows, so will the projects that I have to share.
   </p>
 </div>
 </template>
 
 <script>
-// @ is an alias to /src
-//import ImageCycle from '@/components/ImgCycle.vue' //Not needed.
+//import ImageCycle from '@/components/ImgCycle.vue'
 
 export default {
   name: 'home',
@@ -58,7 +57,6 @@ export default {
     };
   },
   mounted: function() {
-    //get image path variables from parent - require("#") - and add here to this.images array
     this.startRotation();
   },
   methods: {
