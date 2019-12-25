@@ -13,7 +13,7 @@
       <img class="images i1" src="../assets/comptia-security.png" alt="resume pic 1">
     </div>
     <p>
-      From earning a bachelor's degree in computer science with a concentration in security,
+      From&nbsp;earning&nbsp;a&nbsp;bachelor's&nbsp;degree in computer science with a concentration in security,
       I earned my Security+ certification within one month of graduation. As of Fall 2020 I will
       be attending the <a href="https://www.nyit.edu/">New York Institute of Technology </a> to complete a master's in Cybersecurity.
       As an engineer by day and a graduate student by night, the learning truly never stops.
@@ -59,6 +59,7 @@
 
 .pic1 {
   float: right;
+  padding: 0;
 }
 
 .pic2 {
