@@ -71,8 +71,9 @@ export default {
   position: fixed;
   margin-top: -10px;
   width: 100%;
-  padding: 10px 0 0 0;
+  padding: 10px 0 10px 0;
   z-index: 99;
+  background: #F8F8F8;
 }
 
 a {
