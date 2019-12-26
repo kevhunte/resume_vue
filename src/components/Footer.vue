@@ -2,13 +2,13 @@
 <div id="footer">
   <h3> {{header1}}</h3>
   <ul>
-    <li><a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/kevhunte" target="_blank" rel="noopener">Github</a></li>
+    <li class="static"><a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li class="static"><a href="https://github.com/kevhunte" target="_blank" rel="noopener">Github</a></li>
   </ul>
   <h3 v-if="projects.length > 0">Recent Projects</h3>
   <ul>
     <!--populate li with each project in list - p.URL and p.Text-->
-    <li v-for="p in projects" :key=p.id><a :href="p.URL" target="_blank" rel="noopener">{{p.Text}}</a></li>
+    <li class="dynamic" v-for="p in projects" :key=p.id><a :href="p.URL" target="_blank" rel="noopener">{{p.Text}}</a></li>
   </ul>
 </div>
 </template>
@@ -57,9 +57,14 @@ ul {
   padding: 0;
 }
 
-li {
+.static {
   display: inline-block;
   margin: 0 10px;
+}
+
+.dynamic {
+  margin: 0 10px;
+  padding: 0 0 10px 0;
 }
 
 a {
