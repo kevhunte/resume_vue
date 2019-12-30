@@ -50,7 +50,6 @@
   width: 200px;
   display: inline-block;
   padding: 0 15px 0 15px;
-  overflow: auto;
 }
 
 .i2 {
