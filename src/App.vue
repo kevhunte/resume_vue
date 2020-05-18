@@ -1,8 +1,8 @@
 <template>
 <div id="app">
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/"> Home </router-link> |
+    <router-link to="/about"> About </router-link>
     <!--|
     <router-link to="/contact">Contact</router-link>-->
   </div>
@@ -69,11 +69,9 @@ export default {
 
 #nav {
   position: fixed;
-  margin-top: -10px;
-  width: 100%;
-  padding: 10px 0 10px 0;
+  left: 0;
+  right: 0;
   z-index: 99;
-  background: #F8F8F8;
 }
 
 a {
