@@ -4,7 +4,7 @@
 
   <div id="sumContainer" class="containers">
     <p>
-      I describe myself as a security conscious fullstack developer. <br />
+      I describe myself as a security conscious, fullstack developer / tester. <br />
       Java, C#, Python, and JavaScript are some of the many tools I have experience with.
       With Vue and React as my frontend frameworks of choice, developing secure fullstack applications are where my skills shine.
     </p>
@@ -49,7 +49,7 @@
       <ul>
         <li>Refactored and developed an Android 8.0 exercise application.</li>
         <li>Implemented Google's Activity Recognition/Transition API.</li>
-        <li>Transmitted data to an Amazon EC2 Virtual Server</li>
+        <li>Sent and received data to API hosted on Amazon EC2</li>
       </ul>
     </div>
 
@@ -78,7 +78,7 @@
       <h4>University of Connecticut</h4>
       <h5>May 2019</h5>
     </div>
-    <p>Graduate with a B.S.E in Computer Science and Engineering, concentrated in Cybersecurity</p>
+    <p>Graduated with a B.S.E in Computer Science and Engineering, concentrated in Cybersecurity</p>
   </div>
 
   <div id="certsContainer" class="containers">
@@ -89,7 +89,7 @@
         <h5>July 2019</h5>
       </div>
       <p style="margin: 0;"> <b>Credential ID:</b><br /> ZZQKBKLMZDB41ZCD</p>
-      <p style="margin: 0;">This certification covers professional security concepts in the domains of:</p>
+      <p style="margin: 0;">The Security+ certification covers professional security concepts in the domains of:</p>
       <ul>
         <li>Threats, Attacks and Vulnerabilities </li>
         <li>Technologies and Tools </li>
@@ -121,6 +121,7 @@ export default {
 
 .resHeaders {
   display: flex;
+  font-variant: petite-caps;
 }
 
 
@@ -140,12 +141,9 @@ h5 {
   text-decoration: underline;
 }
 
-#certsContainer>div>ul {
-  align-items: center;
-}
-
-#certsContainer>div>ul>li {
+li {
   list-style: none;
+  padding: 1rem 0;
   /*display: table-cell;*/
 }
 </style>

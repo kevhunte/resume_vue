@@ -46,15 +46,13 @@ export default {
 </script>
 
 <style>
-/*@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";*/
-#footer {
-  /*Figure out how to dynamically determine top*/
+/* #footer {
   top: 900px;
   width: 100%;
   position: absolute;
   border-top: 1px solid #2c3e50;
   padding: 0 0 15px 0;
-}
+} */
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -114,7 +112,7 @@ p {
   }
 }
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
   from {
     opacity: 1;
   }
@@ -122,7 +120,7 @@ p {
   to {
     opacity: 0;
   }
-}
+} */
 
 @keyframes fadeIn {
   from {
