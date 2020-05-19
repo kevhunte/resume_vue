@@ -6,43 +6,42 @@
     <!--|
     <router-link to="/contact">Contact</router-link>-->
   </div>
-  <transition name="router-anim">
-    <router-view />
-  </transition>
-  <Footer header1="Contact & Projects" url='https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev' />
+  <router-view class="animated fadeIn" />
+  <!--<Footer header1="Contact & Projects" url='https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev' />-->
 </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer.vue'
+//import Footer from '@/components/Footer.vue'
 export default {
   name: 'app',
   components: {
-    Footer
+    //Footer
   },
   mounted: function() {
     //console.log(this.$route.currentRoute)
-    this.adjustFooter("home");
-  },
-  updated: async function() {
-    //console.log(this.$route);
-    await this.wait(1000); //waits for transition
-    this.adjustFooter(this.$route.name);
-  },
-  methods: {
-    adjustFooter: function(page) {
-      let footer = document.getElementById("footer");
-      let currentPageLen;
-      let offset = 80;
-      if (document.getElementById(page)) {
-        currentPageLen = document.getElementById(page).clientHeight + offset;
-        footer.style.top = currentPageLen + "px";
-      }
-    },
-    wait: function(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
+    //this.adjustFooter("home");
   }
+  /*,
+    updated: async function() {
+      //console.log(this.$route);
+      await this.wait(1000); //waits for transition
+      this.adjustFooter(this.$route.name);
+    },
+    methods: {
+      adjustFooter: function(page) {
+        let footer = document.getElementById("footer");
+        let currentPageLen;
+        let offset = 80;
+        if (document.getElementById(page)) {
+          currentPageLen = document.getElementById(page).clientHeight + offset;
+          footer.style.top = currentPageLen + "px";
+        }
+      },
+      wait: function(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+    }*/
 }
 </script>
 
@@ -93,19 +92,26 @@ p {
   top: 50px;
   width: inherit;
   display: block;
-  padding: 15px 50px 0 50px;
+  padding: 15px 1rem 0 1rem;
 }
 
-.router-anim-enter-active,
-.fade-enter-active {
-  animation: fadeIn 1.2s;
-  animation-delay: .8s;
-  opacity: 0;
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.router-anim-leave-active,
-.fade-leave-active {
-  animation: fadeOut 1.2s;
+@media (print),
+(prefers-reduced-motion: reduce) {
+  .animated {
+    -webkit-animation-duration: 1.5ms !important;
+    animation-duration: 1.5ms !important;
+    -webkit-transition-duration: 1.5ms !important;
+    transition-duration: 1.5ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 @keyframes fadeOut {
@@ -126,5 +132,10 @@ p {
   to {
     opacity: 1;
   }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 </style>
