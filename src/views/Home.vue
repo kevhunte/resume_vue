@@ -11,6 +11,8 @@
     <p>
       For more information about my experience, education, and personal projects, view below.
     </p>
+    <a href="/Resume.pdf" target="_blank" rel="noopener"><button type="button" name="button">Resume</button></a>
+    <a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener"><button type="button" name="button">Contact</button></a>
   </div>
 
   <div id="experienceContainer" class="containers">
@@ -22,7 +24,7 @@
       <ul>
         <li>Lead of functional testing for Con Edison’s Outage API and Complex Billing initiative</li>
         <li>Developed and refactored unit tests for UI and REST API to validate business functionality</li>
-        <li>Skilled with Selenium, C#, and Postman in an Agile SaFe environment</li>
+        <li>Skilled with Selenium, C#, and JavaScript in an Agile SaFe environment</li>
       </ul>
     </div>
     <div class="titles">
@@ -66,9 +68,9 @@
     <h2 class="resHeaders">Personal Projects</h2>
     <div :key="p.key" v-for="p in this.projects" class="titles">
       <h3>{{p.Text}}</h3>
-      <h5><a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener">Click here to view the website </a></h5>
-      <h5><a :href="p.URL" target="_blank" rel="noopener">Click here to view code </a></h5>
-      <ul>
+      <a :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
+      <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
+      <ul style="padding:0; margin-top:0;">
         <li>{{p.Blurb}}</li>
       </ul>
     </div>
@@ -95,9 +97,9 @@
         <h3>CompTIA Security+</h3>
         <h5>July 2019</h5>
       </div>
-      <p style="margin: 0;"> <b>Credential ID:</b><br /> ZZQKBKLMZDB41ZCD</p>
+      <p style="margin: 0;"> <b>Credential ID:</b> ZZQKBKLMZDB41ZCD</p>
       <p style="margin: 0;">The Security+ certification covers professional security concepts in the domains of:</p>
-      <ul>
+      <ul style="padding:0;">
         <li>Threats, Attacks and Vulnerabilities </li>
         <li>Technologies and Tools </li>
         <li>Architecture and Design </li>
@@ -132,6 +134,23 @@ export default {
 
 <style scoped>
 .home {}
+
+img {
+  width: 2rem;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #42b983;
+  color: white;
+  font-weight: 600;
+}
 
 .resHeaders {
   display: flex;
