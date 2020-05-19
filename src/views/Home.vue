@@ -1,6 +1,6 @@
 <template>
 <div class="home page col-m4-4" id="home">
-  <h1>Creator. Explorer. Engineer</h1>
+  <h1>Creator. Explorer. Engineer.</h1>
 
   <div id="sumContainer" class="containers">
     <p>
@@ -17,8 +17,8 @@
     <h2 class="resHeaders">Experience</h2>
 
     <div class="titles">
-      <h4>Software Test Engineer, Con Edison</h4>
-      <h5>August 2019 - Current</h5>
+      <h3>Software Test Engineer, Con Edison</h3>
+      <h5>August 2019 - Current. New York, NY</h5>
       <ul>
         <li>Lead of functional testing for Con Edison’s Outage API and Complex Billing initiative</li>
         <li>Developed and refactored unit tests for UI and REST API to validate business functionality</li>
@@ -26,8 +26,8 @@
       </ul>
     </div>
     <div class="titles">
-      <h4>Software Test Engineer, Real-Time Technology Solutions</h4>
-      <h5>June 2019 - Current</h5>
+      <h3>Software Test Engineer, Real-Time Technology Solutions</h3>
+      <h5>June 2019 - Current. New York, NY</h5>
       <ul>
         <li>Verified application functionality, usability, scalability and data validity</li>
         <li>Performed regression, script, and user acceptance testing</li>
@@ -35,8 +35,8 @@
       </ul>
     </div>
     <div class="titles">
-      <h4>Full Stack Developer, University of Connecticut</h4>
-      <h5>August 2018 - May 2019</h5>
+      <h3>Full Stack Developer, University of Connecticut</h3>
+      <h5>August 2018 - May 2019. Storrs, CT</h5>
       <ul>
         <li>Created a server-less web application UI using HTML5, JQuery, and Bootstrap.</li>
         <li>Integrated REST API with AWS API Gateway and Lambda written in Python</li>
@@ -44,8 +44,8 @@
       </ul>
     </div>
     <div class="titles">
-      <h4>Android Developer, University of Connecticut</h4>
-      <h5>May 2018 - September 2018</h5>
+      <h3>Android Developer, University of Connecticut</h3>
+      <h5>May 2018 - September 2018. Storrs, CT</h5>
       <ul>
         <li>Refactored and developed an Android 8.0 exercise application.</li>
         <li>Implemented Google's Activity Recognition/Transition API.</li>
@@ -64,18 +64,25 @@
 
   <div id="projectsContainer" class="containers">
     <h2 class="resHeaders">Personal Projects</h2>
-    --- Use API here ---
+    <div :key="p.key" v-for="p in this.projects" class="titles">
+      <h3>{{p.Text}}</h3>
+      <h5><a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener">Click here to view the website </a></h5>
+      <h5><a :href="p.URL" target="_blank" rel="noopener">Click here to view code </a></h5>
+      <ul>
+        <li>{{p.Blurb}}</li>
+      </ul>
+    </div>
   </div>
 
   <div id="edContainer" class="containers">
     <h2 class="resHeaders">Education</h2>
     <div class="titles" style="">
-      <h4>New York Institute of Technology</h4>
+      <h3>New York Institute of Technology</h3>
       <h5>Current</h5>
     </div>
     <p>Pursuing a Master of Science in Cybersecurity</p>
     <div class="titles" style="">
-      <h4>University of Connecticut</h4>
+      <h3>University of Connecticut</h3>
       <h5>May 2019</h5>
     </div>
     <p>Graduated with a B.S.E in Computer Science and Engineering, concentrated in Cybersecurity</p>
@@ -85,7 +92,7 @@
     <h2 class="resHeaders">Certifications</h2>
     <div>
       <div class="titles" style="">
-        <h4>CompTIA Security+</h4>
+        <h3>CompTIA Security+</h3>
         <h5>July 2019</h5>
       </div>
       <p style="margin: 0;"> <b>Credential ID:</b><br /> ZZQKBKLMZDB41ZCD</p>
@@ -109,9 +116,16 @@ export default {
   name: 'home',
   components: {},
   data() {
-    return {};
+    return {
+      projects: []
+    };
   },
-  mounted: function() {},
+  mounted: async function() {
+    const url = 'https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev';
+    const response = await fetch(url);
+    const data = await response.json();
+    this.projects = data.body;
+  },
   methods: {}
 };
 </script>
@@ -126,7 +140,7 @@ export default {
 
 
 .titles,
-h4,
+h3,
 h5 {
   margin-bottom: 0;
 }
