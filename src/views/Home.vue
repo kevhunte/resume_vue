@@ -2,10 +2,10 @@
 <div class="home page col-m4-4" id="home">
   <h1>Creator. Explorer. Engineer.</h1>
 
-  <div id="sumContainer" class="containers" style="margin: 0 1rem;">
+  <div id="sumContainer" class="containers" style="margin: 0 3rem;">
     <p>
       I describe myself as a security conscious, fullstack developer / tester. <br />
-      Java, C#, Python, and JavaScript are some of the many tools I have experience with.
+      Java, C#, Python, and JavaScript are some of the many tools I have experience with.<br />
       With Vue and React as my frontend frameworks of choice, developing secure fullstack applications are where my skills shine.
     </p>
     <p>
@@ -159,6 +159,12 @@ button:hover {
 .resHeaders {
   display: flex;
   font-variant: petite-caps;
+}
+
+@media screen and (min-width: 650px) {
+  .resHeaders {
+    margin: 0 6.5rem;
+  }
 }
 
 #projects {

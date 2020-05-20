@@ -1,6 +1,6 @@
 <template>
 <div class="about page" id="about">
-  <h1>About The Creator</h1>
+  <h1>More About Me</h1>
   <p>
     Creative, persistent, and versatile are some of the few words I use to describe myself.
     As a software engineer, creation is at the palm of your hands - particularly in your fingers.
@@ -45,6 +45,12 @@
 .section-about {
   /*wraps around content*/
   /* overflow: auto; */
+}
+
+@media screen and (min-width: 650px) {
+  .about {
+    margin: 0 7rem;
+  }
 }
 
 .div-images {
