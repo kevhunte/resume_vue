@@ -66,13 +66,15 @@
 
   <div id="projectsContainer" class="containers">
     <h2 class="resHeaders">Personal Projects</h2>
-    <div :key="p.key" v-for="p in this.projects" class="titles">
-      <h3>{{p.Text}}</h3>
-      <a :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
-      <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
-      <ul style="padding:0; margin-top:0;">
-        <li>{{p.Blurb}}</li>
-      </ul>
+    <div id="projects">
+      <div :key="p.key" v-for="p in this.projects" class="titles project">
+        <h3>{{p.Text}}</h3>
+        <a :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
+        <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
+        <ul style="padding:0; margin-top:0;">
+          <li>{{p.Blurb}}</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -155,6 +157,13 @@ button:hover {
 .resHeaders {
   display: flex;
   font-variant: petite-caps;
+}
+
+.project {
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
