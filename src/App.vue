@@ -7,12 +7,13 @@
     <router-link to="/contact">Contact</router-link>-->
   </div>
   <router-view class="animated fadeIn" />
-  <!--<Footer header1="Contact & Projects" url='https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev' />-->
+  <div id="arrowUpIconContainer" class="">
+    <a href="#"><img src="@/assets/arrowUp.png" alt="topOfPage"></a>
+  </div>
 </div>
 </template>
 
 <script>
-//import Footer from '@/components/Footer.vue'
 export default {
   name: 'app',
   components: {
@@ -48,6 +49,17 @@ export default {
 <style>
 html {
   scroll-behavior: smooth;
+}
+
+#arrowUpIconContainer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 1rem 1rem 0;
+}
+
+#arrowUpIconContainer>a>img {
+  width: 1.5rem;
 }
 
 /* #footer {

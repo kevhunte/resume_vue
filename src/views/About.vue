@@ -9,11 +9,11 @@
   </p>
 
   <div class="">
-    <img class="images" src="../assets/kevin_hunte.jpg" alt="">
+    <img class="images animated fadeIn" src="../assets/kevin_hunte.jpg" alt="">
   </div>
   <section class="section-about">
     <div class="div-images pic1">
-      <img class="images i1" src="../assets/comptia-security.png" alt="resume pic 1">
+      <img class="images i1 animated fadeIn" src="../assets/comptia-security.png" alt="resume pic 1">
     </div>
     <p>
       From&nbsp;earning&nbsp;a&nbsp;bachelor's&nbsp;degree in computer science with a concentration in security,
@@ -24,7 +24,7 @@
   </section>
   <section class="section-about">
     <div class="div-images pic2">
-      <img class="images i2" src="..//assets/aws.png" alt="resume pic 2">
+      <img class="images i2 animated fadeIn" src="..//assets/aws.png" alt="resume pic 2">
     </div>
     <p>
       Moving towards the near and current future, I will be working to integrate enterprise level technologies into my personal projects.
