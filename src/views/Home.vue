@@ -2,7 +2,7 @@
 <div class="home page col-m4-4" id="home">
   <h1>Creator. Explorer. Engineer.</h1>
 
-  <div id="sumContainer" class="containers">
+  <div id="sumContainer" class="containers" style="margin: 0 1rem;">
     <p>
       I describe myself as a security conscious, fullstack developer / tester. <br />
       Java, C#, Python, and JavaScript are some of the many tools I have experience with.
@@ -61,15 +61,15 @@
     <h2 class="resHeaders">Skills</h2>
     <p style="margin: 0;"> <b>Skilled in:</b> Python, Java, C#, JavaScript, HTML, CSS, SQL, NoSQL, Vue.JS, AWS, Node</p>
     <p style="margin: 0;"> Object-oriented design, functional programming, UI and service automation, and Server-Side development</p>
-    <p style="margin: 0;"> <b>Knowledgeable in:</b> React.JS, C++ </p>
+    <p style="margin: 0;"> <b>Knowledgeable in:</b> React.JS, Express, C++ </p>
   </div>
 
   <div id="projectsContainer" class="containers">
     <h2 class="resHeaders">Personal Projects</h2>
-    <div id="projects" style="">
+    <div id="projects" v-if="this.projects" class="animated fadeIn">
       <div :key="p.key" v-for="p in this.projects" class="titles project">
         <h3>{{p.Text}}</h3>
-        <a :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
+        <a v-if="p.URL" :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
         <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
         <ul style="margin-top:0;">
           <li>{{p.Blurb}}</li>
@@ -116,6 +116,7 @@
 </template>
 
 <script>
+import projectsURL from '@/endpoints'
 export default {
   name: 'home',
   components: {},
@@ -125,7 +126,7 @@ export default {
     };
   },
   mounted: async function() {
-    const url = 'https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev';
+    const url = projectsURL; //'https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev';
     const response = await fetch(url);
     const data = await response.json();
     this.projects = data.body;
@@ -170,6 +171,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: baseline;
 }
 
 
