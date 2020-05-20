@@ -66,12 +66,12 @@
 
   <div id="projectsContainer" class="containers">
     <h2 class="resHeaders">Personal Projects</h2>
-    <div id="projects">
+    <div id="projects" style="">
       <div :key="p.key" v-for="p in this.projects" class="titles project">
         <h3>{{p.Text}}</h3>
         <a :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
         <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
-        <ul style="padding:0; margin-top:0;">
+        <ul style="margin-top:0;">
           <li>{{p.Blurb}}</li>
         </ul>
       </div>
@@ -101,7 +101,7 @@
       </div>
       <p style="margin: 0;"> <b>Credential ID:</b> ZZQKBKLMZDB41ZCD</p>
       <p style="margin: 0;">The Security+ certification covers professional security concepts in the domains of:</p>
-      <ul style="padding:0;">
+      <ul>
         <li>Threats, Attacks and Vulnerabilities </li>
         <li>Technologies and Tools </li>
         <li>Architecture and Design </li>
@@ -159,6 +159,12 @@ button:hover {
   font-variant: petite-caps;
 }
 
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .project {
   max-width: 350px;
   display: flex;
@@ -181,6 +187,10 @@ h5 {
 h5 {
   margin: 0;
   text-decoration: underline;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
