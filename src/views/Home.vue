@@ -163,7 +163,7 @@ button:hover {
 
 @media screen and (min-width: 650px) {
   .resHeaders {
-    margin: 0 6.5rem;
+    margin: 0 calc(25% - 10px);
   }
 }
 
