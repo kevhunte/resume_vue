@@ -147,6 +147,7 @@ button {
   border-radius: 10px;
   font-weight: 600;
   margin: 0 5px;
+  background-color: white;
 }
 
 button:hover {

@@ -51,6 +51,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0 8px 8px 8px;
+}
+
 #arrowUpIconContainer {
   position: fixed;
   right: 0;
@@ -62,14 +66,6 @@ html {
   width: 1.5rem;
 }
 
-/* #footer {
-  top: 900px;
-  width: 100%;
-  position: absolute;
-  border-top: 1px solid #2c3e50;
-  padding: 0 0 15px 0;
-} */
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,7 +73,7 @@ html {
   text-align: center;
   color: #2c3e50;
   border-radius: 10px;
-  margin: 30px auto 0 auto;
+  /* margin: 30px auto 0 auto; */
 }
 
 #nav {
@@ -85,6 +81,12 @@ html {
   left: 0;
   right: 0;
   z-index: 99;
+  padding: 1rem 0;
+  background-color: #2c3e50;
+}
+
+#nav>a {
+  color: white;
 }
 
 a {
