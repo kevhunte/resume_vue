@@ -2,7 +2,7 @@
 <div id="app">
   <div id="nav">
     <router-link to="/"> Home </router-link> |
-    <router-link to="/about"> About </router-link>
+    <router-link id="AboutLink" to="/about"> About </router-link>
     <!--|
     <router-link to="/contact">Contact</router-link>-->
   </div>
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 /* #footer {
   top: 900px;
   width: 100%;

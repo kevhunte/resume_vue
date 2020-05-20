@@ -9,7 +9,7 @@
       With Vue and React as my frontend frameworks of choice, developing secure fullstack applications are where my skills shine.
     </p>
     <p>
-      For more information about my experience, education, and personal projects, view below.
+      For more information about my <a href="#experienceContainer">experience</a>, <a href="#edContainer">education</a>, and <a href="#projectsContainer">personal projects</a>, view below.
     </p>
     <a href="/Resume.pdf" target="_blank" rel="noopener"><button type="button" name="button">Resume</button></a>
     <a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener"><button type="button" name="button">Contact</button></a>
@@ -126,7 +126,7 @@ export default {
     };
   },
   mounted: async function() {
-    const url = projectsURL; //'https://b5w5u1jr79.execute-api.us-east-1.amazonaws.com/Dev';
+    const url = projectsURL;
     const response = await fetch(url);
     const data = await response.json();
     this.projects = data.body;

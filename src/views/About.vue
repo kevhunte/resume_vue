@@ -6,43 +6,45 @@
     As a software engineer, creation is at the palm of your hands - particularly in your fingers.
     With a focus on server-side development, I am continuously improving skills in order to
     develop, scale, and secure systems.
-
   </p>
+
+  <div class="">
+    <img class="images" src="../assets/kevin_hunte.jpg" alt="">
+  </div>
   <section class="section-about">
     <div class="div-images pic1">
       <img class="images i1" src="../assets/comptia-security.png" alt="resume pic 1">
     </div>
     <p>
       From&nbsp;earning&nbsp;a&nbsp;bachelor's&nbsp;degree in computer science with a concentration in security,
-      I earned my Security+ certification within one month of graduation. As of Fall 2020 I will
+      I earned my Security+ certification within one month of graduation. As of Spring 2020 I will
       be attending the <a href="https://www.nyit.edu/">New York Institute of Technology </a> to complete a master's in Cybersecurity.
-      As an engineer by day and a graduate student by night, the learning truly never stops.
+      As an engineer by day and a graduate student by night, my learning never stops.
     </p>
   </section>
   <section class="section-about">
     <div class="div-images pic2">
-      <img class="images i2" src="..//assets/okta.png" alt="resume pic 2">
+      <img class="images i2" src="..//assets/aws.png" alt="resume pic 2">
     </div>
     <p>
-      Moving towards the near and current future, I will be working to integrate Okta into my personal projects. The best way to learn is to create!
-      I started by watching tutorials and reviewing documentation from <a href="https://developer.okta.com/">Okta developer's portal.</a>
-      My end goal is to develop a comfortable and working understanding of Okta's API for authorizing access to services
-      for user agents and other systems.
+      Moving towards the near and current future, I will be working to integrate enterprise level technologies into my personal projects.
+      The best way to learn is to create! I have the most experience using Amazon Web Services tech, as well as Auth0 for Identity and Access Management.
+      I plan to integrate with more cloud services as I create new projects.
     </p>
   </section>
   <section class="section-about">
     <p>
-      I am always working new projects. The best way to stay up to date is to check the repositories below.
+      I am always working new projects. To see my latest projects, view the personal projects section of my resume.
       The information in the footer will update to highlight my latest creations.
     </p>
   </section>
 </div>
 </template>
 
-<style>
+<style scoped>
 .section-about {
   /*wraps around content*/
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .div-images {
@@ -69,5 +71,6 @@
   position: relative;
   max-height: 180px;
   max-width: 180px;
+  border-radius: 15px;
 }
 </style>
