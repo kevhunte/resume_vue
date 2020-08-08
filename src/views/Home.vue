@@ -28,8 +28,18 @@
       </ul>
     </div>
     <div class="titles">
+      <h3>Senior Software Test Engineer, Real-Time Technology Solutions</h3>
+      <h5>July 2020 - Current. New York, NY</h5>
+      <ul>
+        <li>Create and review test plans for client features</li>
+        <li>Develop and maintain automated integration and end-to-end tests</li>
+        <li>Manage software deployment stages in CD/CI pipelines</li>
+        <li>Mentor and assist Junior Test Engineers</li>
+      </ul>
+    </div>
+    <div class="titles">
       <h3>Software Test Engineer, Real-Time Technology Solutions</h3>
-      <h5>June 2019 - Current. New York, NY</h5>
+      <h5>June 2019 - July 2020. New York, NY</h5>
       <ul>
         <li>Verified application functionality, usability, scalability and data validity</li>
         <li>Performed regression, script, and user acceptance testing</li>
