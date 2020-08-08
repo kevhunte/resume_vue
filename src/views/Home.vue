@@ -146,7 +146,7 @@ export default {
 </script>
 
 <style scoped>
-.home {}
+/*.home {}*/
 
 img {
   width: 2rem;
