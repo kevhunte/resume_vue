@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       - echo installing Node and npm ...
-      - curl -sL https://deb.nodesource.com/setup_10.x | bash -
-      - apt install -y nodejs
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - apt-get install -y nodejs
 
   pre_build:
     commands:
@@ -15,10 +15,13 @@ phases:
 
   build:
     commands:
-      # - echo clearing old bucket content ...
-      # - aws s3 rm --recursive s3://kevhunte/
       - echo building ...
       - npm run build
+  
+  post_build:
+    commands:
+      - echo clearing old bucket content ...
+      - aws s3 rm --recursive s3://kevhunte/
 artifacts:
   files:
     - "**/*"
