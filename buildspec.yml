@@ -11,11 +11,12 @@ phases:
     commands:
       - echo installing dependencies ...
       - npm install
+      - npm audit fix
 
   build:
     commands:
       - echo clearing old bucket content ...
-      - aws s3 rm --recursive s3://kevhunte
+      - aws s3 rm --recursive s3://kevhunte/
       - echo building ...
       - npm run build
 artifacts:
