@@ -4,8 +4,8 @@
 
   <div id="sumContainer" class="containers" style="margin: 0 3rem;">
     <p>
-      I describe myself as a security conscious, fullstack developer / tester. <br />
-      Java, C#, Python, and JavaScript are some of the many tools I have experience with.<br />
+      A security conscious fullstack developer and quality assurance professional. <br />
+      Experienced with Java, C#, Python, and JavaScript.<br />
       With Vue and React as my frontend frameworks of choice, developing secure fullstack applications are where my skills shine.
     </p>
     <p>
@@ -18,32 +18,28 @@
   <div id="experienceContainer" class="containers">
     <h2 class="resHeaders">Experience</h2>
 
-    <div class="titles">
-      <h3>Software Test Engineer, Con Edison</h3>
-      <h5>August 2019 - Current. New York, NY</h5>
-      <ul>
-        <li>Lead of functional testing for Con Edison’s Outage API and Complex Billing initiative</li>
-        <li>Developed and refactored unit tests for UI and REST API to validate business functionality</li>
-        <li>Skilled with Selenium, C#, and JavaScript in an Agile SaFe environment</li>
-      </ul>
-    </div>
+    
     <div class="titles">
       <h3>Senior Software Test Engineer, Real-Time Technology Solutions</h3>
-      <h5>July 2020 - Current. New York, NY</h5>
+      <h5>June 2019 - Current. New York, NY</h5>
       <ul>
-        <li>Create and review test plans for client features</li>
+        <li>Create and execute test plans for client features</li>
         <li>Develop and maintain automated integration and end-to-end tests</li>
         <li>Manage software deployment stages in CD/CI pipelines</li>
         <li>Mentor and assist Junior Test Engineers</li>
       </ul>
-    </div>
-    <div class="titles">
-      <h3>Software Test Engineer, Real-Time Technology Solutions</h3>
-      <h5>June 2019 - July 2020. New York, NY</h5>
+
+      <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - Present</h5>
       <ul>
-        <li>Verified application functionality, usability, scalability and data validity</li>
-        <li>Performed regression, script, and user acceptance testing</li>
-        <li>Developed and maintained reusable code libraries in the Java and C# programming languages</li>
+        <li>Lead of functional testing for Con Edison’s billing and usage data visualization effort</li>
+        <li>Point of contact for outage functional testing with DCX's Report Outage API</li>
+        <li>Major contributor to integration test codebase for Con Edison's Platform and Services team</li>
+      </ul>
+
+      <h5>Delta Dental, Work Item Management Migration. June - July 2019</h5>
+      <ul>
+        <li>Migrated collection from HP's ALM to Microsoft's TFS (1 million+ items)</li>
+        <li>Consumed Microsoft's TFS / Azure DevOps API in the .NET framework</li>
       </ul>
     </div>
     <div class="titles">
@@ -92,7 +88,8 @@
     <h2 class="resHeaders">Education</h2>
     <div class="titles" style="">
       <h3>New York Institute of Technology</h3>
-      <h5>Current</h5>
+      <h5>Present</h5>
+      <h5>GPA: 3.3</h5>
     </div>
     <p>Pursuing a Master of Science in Cybersecurity</p>
     <div class="titles" style="">
