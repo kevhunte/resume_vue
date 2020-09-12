@@ -2,8 +2,8 @@
 node_modules
 /dist
 
-#secrets
-endpoints.js
+#secrets, causing issues with codepipeline. Not that big of a deal
+#endpoints.js
 
 # local env files
 .env.local
