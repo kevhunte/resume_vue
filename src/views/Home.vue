@@ -25,7 +25,7 @@
       <ul>
         <li>Create and execute test plans for client features</li>
         <li>Develop and maintain automated integration and end-to-end tests</li>
-        <li>Manage software deployment stages in CD/CI pipelines</li>
+        <li>Manage software deployment stages of CD/CI pipelines</li>
         <li>Mentor and assist Junior Test Engineers</li>
       </ul>
 
