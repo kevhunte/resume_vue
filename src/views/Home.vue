@@ -159,7 +159,7 @@ export default {
     }
     catch (e)
     {
-      console.error(`Error calling projects endpoint: \n${e}`);
+      //console.error(`Error calling projects endpoint: \n${e}`);
     }
   },
   methods: {}
