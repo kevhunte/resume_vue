@@ -21,12 +21,12 @@
     
     <div class="titles">
       <h3>Senior Software Test Engineer, Real-Time Technology Solutions</h3>
-      <h5>June 2019 - Current. New York, NY</h5>
+      <h5>June 2019 - Present. New York, NY</h5>
       <ul>
-        <li>Create and execute test plans for client features</li>
-        <li>Develop and maintain automated integration and end-to-end tests</li>
-        <li>Manage software deployment stages of CD/CI pipelines</li>
-        <li>Mentor and assist Junior Test Engineers</li>
+        <li>Created and execute test plans for client features</li>
+        <li>Developed and maintain automated integration and end-to-end tests</li>
+        <li>Managed software deployment stages of CD/CI pipelines</li>
+        <li>Mentored and assist Junior Test Engineers</li>
       </ul>
 
       <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - Present</h5>
@@ -43,21 +43,25 @@
       </ul>
     </div>
     <div class="titles">
-      <h3>Full Stack Developer, University of Connecticut</h3>
-      <h5>August 2018 - May 2019. Storrs, CT</h5>
+      <h3>Software Developer, University of Connecticut</h3>
+      <h5>May 2018 - May 2019. Storrs, CT</h5>
       <ul>
-        <li>Created a server-less web application UI using HTML5, JQuery, and Bootstrap.</li>
-        <li>Integrated REST API with AWS API Gateway and Lambda written in Python</li>
-        <li>Stored and retrieved user data using DynamoDB and REST API</li>
+        <li>LifeRhythm REU Fellow. Sole undergraduate Android developer</li>
+        <li>Team Lead for Litigation Database Project. Lead developer for platform and services</li>
       </ul>
-    </div>
-    <div class="titles">
-      <h3>Android Developer, University of Connecticut</h3>
-      <h5>May 2018 - September 2018. Storrs, CT</h5>
+
+      <h5>Full Stack Developer. August 2018 - May 2019</h5>
       <ul>
-        <li>Refactored and developed an Android 8.0 exercise application.</li>
-        <li>Implemented Google's Activity Recognition/Transition API.</li>
-        <li>Sent and received data to API hosted on Amazon EC2</li>
+        <li>Created a server-less web application using Amazon Web Services</li>
+        <li>Developed and integrated REST API with API Gateway and Lambda</li>
+        <li>Stored and retrieved user data using DynamoDB and a HTML5, Bootstrap, and JQuery frontend</li>
+      </ul>
+
+      <h5>Android Developer. May - September 2018</h5>
+      <ul>
+        <li>Refactored and developed LifeRhythm exercise application to Android 8.0.</li>
+        <li>Integrated Google's Activity Recognition/Transition API.</li>
+        <li>Consumed REST API hosted on AWS EC2</li>
       </ul>
     </div>
 
@@ -66,7 +70,7 @@
   <div id="skillsContainer" class="containers">
     <h2 class="resHeaders">Skills</h2>
     <p style="margin: 0;"> <b>Skilled in:</b> Python, Java, C#, JavaScript, HTML, CSS, SQL, NoSQL, Vue.JS, AWS, Node</p>
-    <p style="margin: 0;"> Object-oriented design, functional programming, UI and service automation, and Server-Side development</p>
+    <p style="margin: 0;"> Object-oriented design, functional programming, end-to-end and service test automation, and full stack development</p>
     <p style="margin: 0;"> <b>Knowledgeable in:</b> React.JS, Express, C++ </p>
   </div>
 
@@ -82,6 +86,9 @@
         </ul>
       </div>
     </div>
+    <div id="projects" v-else-if="!this.projects" class="animated fadeIn">
+      <p>View my projects at the GitHub repository located <a href="https://github.com/kevhunte" target="_blank" rel="noopener">here</a></p>
+    </div>
   </div>
 
   <div id="edContainer" class="containers">
@@ -92,6 +99,7 @@
       <h5>GPA: 3.3</h5>
     </div>
     <p>Pursuing a Master of Science in Cybersecurity</p>
+    <p>Notable classes to date: Algorithm Concepts, OS Security, Network Security, Cryptography</p>
     <div class="titles" style="">
       <h3>University of Connecticut</h3>
       <h5>May 2019</h5>
@@ -134,9 +142,25 @@ export default {
   },
   mounted: async function() {
     const url = projectsURL;
-    const response = await fetch(url);
-    const data = await response.json();
-    this.projects = data.body;
+    try
+    {
+      if(sessionStorage.getItem('projects'))
+      {
+        this.projects = JSON.parse(sessionStorage.getItem('projects'));
+      }
+      else
+      {
+        const response = await fetch(url);
+        const data = await response.json();
+        sessionStorage.setItem('projects', JSON.stringify(data.body));
+        this.projects = data.body;
+      }
+      
+    }
+    catch (e)
+    {
+      console.error(`Error calling projects endpoint: \n${e}`);
+    }
   },
   methods: {}
 };

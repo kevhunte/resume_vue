@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  var:
+    S3_BUCKET: "kevhunte"
+
 phases:
   install:
     commands:
@@ -21,8 +25,8 @@ phases:
   post_build:
     commands:
       - echo clearing old bucket content ...
-      # Getting this to work so it unclutters bucket
-      - aws s3 rm s3://kevhunte/ --recursive
+      - aws s3 rm s3://${S3_BUCKET}/ --recursive
+      
 artifacts:
   files:
     - "**/*"

@@ -17,8 +17,8 @@
     </div>
     <p>
       From&nbsp;earning&nbsp;a&nbsp;bachelor's&nbsp;degree in computer science with a concentration in security,
-      I earned my Security+ certification within one month of graduation. As of Spring 2020 I will
-      be attending the <a href="https://www.nyit.edu/">New York Institute of Technology </a> to complete a master's in Cybersecurity.
+      I earned my Security+ certification within one month of graduation. As of January 2020 I am
+      attending the <a href="https://www.nyit.edu/" target="_blank" rel="noopener">New York Institute of Technology </a> to complete a master's in Cybersecurity.
       As an engineer by day and a graduate student by night, my learning never stops.
     </p>
   </section>
@@ -27,14 +27,14 @@
       <img class="images i2 animated fadeIn" src="..//assets/aws.png" alt="resume pic 2">
     </div>
     <p>
-      Moving towards the near and current future, I will be working to integrate enterprise level technologies into my personal projects.
-      The best way to learn is to create! I have the most experience using Amazon Web Services tech, as well as Auth0 for Identity and Access Management.
+      Moving towards the near and current future, I am working to integrate enterprise level technologies into my personal projects.
+      The best way to learn is to create! I am most experienced using Amazon Web Services as a cloud service, as well as Auth0 as an Identity Iaas.
       I plan to integrate with more cloud services as I create new projects.
     </p>
   </section>
   <section class="section-about">
     <p>
-      I am always working new projects. To see my latest projects, view the personal projects section of my resume.
+      I am always working new projects. To see my latest projects, view the <a href="/"><b>personal projects section of my resume</b></a>.
       The information in the footer will update to highlight my latest creations.
     </p>
   </section>
@@ -42,10 +42,6 @@
 </template>
 
 <style scoped>
-.section-about {
-  /*wraps around content*/
-  /* overflow: auto; */
-}
 
 @media screen and (min-width: 650px) {
   .about {
