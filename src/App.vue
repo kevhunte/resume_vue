@@ -3,8 +3,6 @@
   <div id="nav">
     <router-link to="/"> Home </router-link> |
     <router-link id="AboutLink" to="/about"> About </router-link>
-    <!--|
-    <router-link to="/contact">Contact</router-link>-->
   </div>
   <router-view class="animated fadeIn" />
   <div id="arrowUpIconContainer" class="">
@@ -19,30 +17,7 @@ export default {
   components: {
     //Footer
   },
-  mounted: function() {
-    //console.log(this.$route.currentRoute)
-    //this.adjustFooter("home");
-  }
-  /*,
-    updated: async function() {
-      //console.log(this.$route);
-      await this.wait(1000); //waits for transition
-      this.adjustFooter(this.$route.name);
-    },
-    methods: {
-      adjustFooter: function(page) {
-        let footer = document.getElementById("footer");
-        let currentPageLen;
-        let offset = 80;
-        if (document.getElementById(page)) {
-          currentPageLen = document.getElementById(page).clientHeight + offset;
-          footer.style.top = currentPageLen + "px";
-        }
-      },
-      wait: function(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-    }*/
+  mounted() {}
 }
 </script>
 

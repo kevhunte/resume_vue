@@ -4,9 +4,9 @@
 
   <div id="sumContainer" class="containers" style="margin: 0 3rem;">
     <p>
-      A security conscious fullstack developer and quality assurance professional. <br />
+      Security conscious fullstack developer and quality assurance professional. <br />
       Experienced with Java, C#, Python, and JavaScript.<br />
-      With Vue and React as my frontend frameworks of choice, developing secure fullstack applications are where my skills shine.
+      Skilled with Vue, React, Node, AWS, Git, SQL, and NoSQL.
     </p>
     <p>
       For more information about my <a href="#experienceContainer">experience</a>, <a href="#edContainer">education</a>, and <a href="#projectsContainer">personal projects</a>, view below.
@@ -95,10 +95,9 @@
     <h2 class="resHeaders">Education</h2>
     <div class="titles" style="">
       <h3>New York Institute of Technology</h3>
-      <h5>Present</h5>
-      <h5>GPA: 3.3</h5>
+      <h5>Anticipated Graduation: June 2021</h5>
     </div>
-    <p>Pursuing a Master of Science in Cybersecurity</p>
+    <p>Pursuing a M.S. in Cybersecurity</p>
     <p>Notable classes to date: Algorithm Concepts, OS Security, Network Security, Cryptography</p>
     <div class="titles" style="">
       <h3>University of Connecticut</h3>
