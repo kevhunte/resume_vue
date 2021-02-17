@@ -20,7 +20,7 @@
 
     
     <div class="titles">
-      <h3>Senior Software Test Engineer, Real-Time Technology Solutions</h3>
+      <h3>Software Development Engineer in Test, Real-Time Technology Solutions</h3>
       <h5>June 2019 - Present. New York, NY</h5>
       <ul>
         <li>Created and execute test plans for client features</li>
@@ -33,7 +33,7 @@
       <ul>
         <li>Lead of functional testing for Con Edison’s billing and usage data visualization effort</li>
         <li>Point of contact for outage functional testing with DCX's Report Outage API</li>
-        <li>Major contributor to integration test codebase for Con Edison's Platform and Services team</li>
+        <li>Major contributor to integration test codebase for Platform and Services team</li>
       </ul>
 
       <h5>Delta Dental, Work Item Management Migration. June - July 2019</h5>
@@ -77,7 +77,7 @@
   <div id="projectsContainer" class="containers">
     <h2 class="resHeaders">Personal Projects</h2>
     <div id="projects" v-if="this.projects" class="animated fadeIn">
-      <div :key="p.key" v-for="p in this.projects" class="titles project">
+      <div :key="idx" v-for="(p, idx) in this.projects" class="titles project">
         <h3>{{p.Text}}</h3>
         <a v-if="p.URL" :href="p.URL" target="_blank" rel="noopener"><img src="../assets/github.svg" alt="" /> </a>
         <a v-if="p.hosted" :href="p.hosted" target="_blank" rel="noopener"><img src="../assets/internet.png" alt="" /> </a>
