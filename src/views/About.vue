@@ -19,17 +19,17 @@
       From&nbsp;earning&nbsp;a&nbsp;bachelor's&nbsp;degree in computer science with a concentration in security,
       I earned my Security+ certification within one month of graduation. As of January 2020 I am
       attending the <a href="https://www.nyit.edu/" target="_blank" rel="noopener">New York Institute of Technology </a> to complete a master's in Cybersecurity.
-      As an engineer by day and a graduate student by night, my learning never stops.
+      As an engineer by day and a graduate student by night, I am continuously learning and developing my skillset.
     </p>
   </section>
   <section class="section-about">
     <div class="div-images pic2">
-      <img class="images i2 animated fadeIn" src="..//assets/aws.png" alt="resume pic 2">
+      <img class="images i2 animated fadeIn" src="../assets/aws.png" alt="resume pic 2">
     </div>
     <p>
-      Moving towards the near and current future, I am working to integrate enterprise level technologies into my personal projects.
-      The best way to learn is to create! I am most experienced using Amazon Web Services as a cloud service, as well as Auth0 as an Identity Iaas.
-      I plan to integrate with more cloud services as I create new projects.
+      I have experience with many modern technologies, such as AWS, Azure, Vue, and React.
+      Upon completion of my master's degree, I will pursue certifications offered by Amazon, Azure, Okta, and other
+      premiere platforms.
     </p>
   </section>
   <section class="section-about">

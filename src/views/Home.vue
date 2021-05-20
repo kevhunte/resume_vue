@@ -18,10 +18,20 @@
   <div id="experienceContainer" class="containers">
     <h2 class="resHeaders">Experience</h2>
 
+    <div class="titles">
+      <h3>Software Engineer, Gopuff</h3>
+      <h5>May 2021 - Current. New York, NY</h5>
+      <ul>
+        <li>Participated in cross-functional projects in a lean environment</li>
+        <li>Implemented automated unit and integration tests</li>
+        <li>Translated verbal requirements into written use cases and testable stories</li>
+        <li>Designed, built, and maintained efficient, reusable, and reliable code in a cloud environment</li>
+      </ul>
+    </div>
     
     <div class="titles">
       <h3>Software Development Engineer in Test, Real-Time Technology Solutions</h3>
-      <h5>June 2019 - Present. New York, NY</h5>
+      <h5>June 2019 - April 2021. New York, NY</h5>
       <ul>
         <li>Created and execute test plans for client features</li>
         <li>Developed and maintain automated integration and end-to-end tests</li>
@@ -29,7 +39,7 @@
         <li>Mentored and assist Junior Test Engineers</li>
       </ul>
 
-      <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - Present</h5>
+      <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - April 2021</h5>
       <ul>
         <li>Lead of functional testing for Con Edison’s billing and usage data visualization effort</li>
         <li>Point of contact for outage functional testing with DCX's Report Outage API</li>
@@ -70,7 +80,7 @@
   <div id="skillsContainer" class="containers">
     <h2 class="resHeaders">Skills</h2>
     <p style="margin: 0;"> <b>Skilled in:</b> Python, Java, C#, JavaScript, HTML, CSS, SQL, NoSQL, Vue.JS, AWS, Node</p>
-    <p style="margin: 0;"> Object-oriented design, functional programming, end-to-end and service test automation, and full stack development</p>
+    <p style="margin: 0;"> Object-oriented design, functional programming, test automation, and full stack development</p>
     <p style="margin: 0;"> <b>Knowledgeable in:</b> React.JS, Express, C++ </p>
   </div>
 
@@ -95,7 +105,7 @@
     <h2 class="resHeaders">Education</h2>
     <div class="titles" style="">
       <h3>New York Institute of Technology</h3>
-      <h5>Anticipated Graduation: June 2021</h5>
+      <h5>December 2021</h5>
     </div>
     <p>Pursuing a M.S. in Cybersecurity</p>
     <p>Notable classes to date: Algorithm Concepts, OS Security, Network Security, Cryptography</p>
@@ -191,7 +201,7 @@ button:hover {
   font-variant: petite-caps;
 }
 
-@media screen and (min-width: 650px) {
+@media (min-width: 650px) {
   .resHeaders {
     margin: 0 calc(25% - 10px);
   }
