@@ -124,15 +124,6 @@
         <h5>July 2019</h5>
       </div>
       <p style="margin: 0;"> <b>Credential ID:</b> ZZQKBKLMZDB41ZCD</p>
-      <p style="margin: 0;">The Security+ certification covers professional security concepts in the domains of:</p>
-      <ul>
-        <li>Threats, Attacks and Vulnerabilities </li>
-        <li>Technologies and Tools </li>
-        <li>Architecture and Design </li>
-        <li>Identity and Access Management </li>
-        <li>Risk Management </li>
-        <li>Cryptography and Public Key Infrastucture </li>
-      </ul>
     </div>
   </div>
 
