@@ -107,13 +107,13 @@
       <h3>New York Institute of Technology</h3>
       <h5>December 2021</h5>
     </div>
-    <p>Pursuing a M.S. in Cybersecurity</p>
-    <p>Notable classes to date: Algorithm Concepts, OS Security, Network Security, Cryptography</p>
+    <p>M.S. in Cybersecurity</p>
+    <p>Notable classes: Software Engineering, Big Data Analytics, Algorithm Concepts, OS Security, Network Security, Cryptography</p>
     <div class="titles" style="">
       <h3>University of Connecticut</h3>
       <h5>May 2019</h5>
     </div>
-    <p>Graduated with a B.S.E in Computer Science and Engineering, concentrated in Cybersecurity</p>
+    <p>B.S.E in Computer Science and Engineering, concentrated in Cybersecurity</p>
   </div>
 
   <div id="certsContainer" class="containers">
