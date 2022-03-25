@@ -4,7 +4,7 @@
 
   <div id="sumContainer" class="containers" style="margin: 0 3rem;">
     <p>
-      Security conscious fullstack developer and quality assurance professional. <br />
+      Security conscious fullstack developer. <br />
       Experienced with Java, C#, Python, and JavaScript.<br />
       Skilled with Vue, React, Node, AWS, Git, SQL, and NoSQL.
     </p>
@@ -20,7 +20,7 @@
 
     <div class="titles">
       <h3>Software Engineer, Gopuff</h3>
-      <h5>Warehousing - {{'Packing & Retail'}}. May 2021 - Current. New York, NY</h5>
+      <h5>Warehousing, {{'Packing & Retail'}}. May 2021 - Current. New York, NY</h5>
       <ul>
         <li>Designed, built and maintained warehouse management systems</li>
         <li>Participated in cross-functional projects in a lean environment</li>
