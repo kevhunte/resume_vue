@@ -20,54 +20,39 @@
 
     <div class="titles">
       <h3>Software Engineer, Gopuff</h3>
-      <h5>May 2021 - Current. New York, NY</h5>
+      <h5>Warehousing - {{'Packing & Retail'}}. May 2021 - Current. New York, NY</h5>
       <ul>
+        <li>Designed, built and maintained warehouse management systems</li>
         <li>Participated in cross-functional projects in a lean environment</li>
-        <li>Implemented automated unit and integration tests</li>
         <li>Translated verbal requirements into written use cases and testable stories</li>
-        <li>Designed, built, and maintained efficient, reusable, and reliable code in a cloud environment</li>
       </ul>
     </div>
     
     <div class="titles">
       <h3>Software Development Engineer in Test, Real-Time Technology Solutions</h3>
-      <h5>June 2019 - April 2021. New York, NY</h5>
-      <ul>
-        <li>Created and execute test plans for client features</li>
-        <li>Developed and maintain automated integration and end-to-end tests</li>
-        <li>Managed software deployment stages of CD/CI pipelines</li>
-        <li>Mentored and assist Junior Test Engineers</li>
-      </ul>
-
-      <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - April 2021</h5>
+      <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - April 2021. New York, NY</h5>
       <ul>
         <li>Lead of functional testing for Con Edison’s billing and usage data visualization effort</li>
-        <li>Point of contact for outage functional testing with DCX's Report Outage API</li>
+        <li>Point of contact for outage functional testing with DCX's Report Outage System</li>
         <li>Major contributor to integration test codebase for Platform and Services team</li>
       </ul>
 
-      <h5>Delta Dental, Work Item Management Migration. June - July 2019</h5>
+      <h5>Delta Dental. June - July 2019</h5>
       <ul>
-        <li>Migrated collection from HP's ALM to Microsoft's TFS (1 million+ items)</li>
+        <li>Migrated a work item collection from HP's ALM to Microsoft's TFS (1 million+ items)</li>
         <li>Consumed Microsoft's TFS / Azure DevOps API in the .NET framework</li>
       </ul>
     </div>
     <div class="titles">
       <h3>Software Developer, University of Connecticut</h3>
-      <h5>May 2018 - May 2019. Storrs, CT</h5>
-      <ul>
-        <li>LifeRhythm REU Fellow. Sole undergraduate Android developer</li>
-        <li>Team Lead for Litigation Database Project. Lead developer for platform and services</li>
-      </ul>
-
-      <h5>Full Stack Developer. August 2018 - May 2019</h5>
+      <h5>Senior Design Project. August 2018 - May 2019</h5>
       <ul>
         <li>Created a server-less web application using Amazon Web Services</li>
         <li>Developed and integrated REST API with API Gateway and Lambda</li>
         <li>Stored and retrieved user data using DynamoDB and a HTML5, Bootstrap, and JQuery frontend</li>
       </ul>
 
-      <h5>Android Developer. May - September 2018</h5>
+      <h5>LifeRhythm REU. May - September 2018</h5>
       <ul>
         <li>Refactored and developed LifeRhythm exercise application to Android 8.0.</li>
         <li>Integrated Google's Activity Recognition/Transition API.</li>
@@ -108,7 +93,6 @@
       <h5>December 2021</h5>
     </div>
     <p>M.S. in Cybersecurity</p>
-    <p>Notable classes: Software Engineering, Big Data Analytics, Algorithm Concepts, OS Security, Network Security, Cryptography</p>
     <div class="titles" style="">
       <h3>University of Connecticut</h3>
       <h5>May 2019</h5>
