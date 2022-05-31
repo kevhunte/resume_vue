@@ -20,11 +20,11 @@
 
     <div class="titles">
       <h3>Software Engineer, Gopuff</h3>
-      <h5>Warehousing, {{'Packing & Retail'}}. May 2021 - Current. New York, NY</h5>
+      <h5>Warehousing - Outbound. May 2021 - Current. New York, NY</h5>
       <ul>
-        <li>Designed, built and maintained warehouse management systems</li>
+        <li>Designed, built and maintained warehouse management systems to fulfill the needs of quick commerce</li>
         <li>Participated in cross-functional projects in a lean environment</li>
-        <li>Translated verbal requirements into written use cases and testable stories</li>
+        <li>Implemented features that directly benefit operation KPIs</li>
       </ul>
     </div>
     
