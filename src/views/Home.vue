@@ -24,17 +24,17 @@
       <ul>
         <li>Designed, built and maintained warehouse management systems to fulfill the needs of quick commerce</li>
         <li>Participated in cross-functional projects in a lean environment</li>
-        <li>Implemented features that directly benefit operation KPIs</li>
+        <li>Implemented features that directly impact operation KPIs</li>
       </ul>
     </div>
     
     <div class="titles">
-      <h3>Software Development Engineer in Test, Real-Time Technology Solutions</h3>
+      <h3>Software Test Engineer, Real-Time Technology Solutions</h3>
       <h5>Con Edison, Digital Customer Experience (DCX). August 2019 - April 2021. New York, NY</h5>
       <ul>
-        <li>Lead of functional testing for Con Edison’s billing and usage data visualization effort</li>
+        <li>Lead of functional testing for Con Edison's billing and usage data visualization effort</li>
         <li>Point of contact for outage functional testing with DCX's Report Outage System</li>
-        <li>Major contributor to integration test codebase for Platform and Services team</li>
+        <li>Major contributor to integration test codebase for DCX's Platform and Services team</li>
       </ul>
 
       <h5>Delta Dental. June - July 2019</h5>
