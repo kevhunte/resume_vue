@@ -1,8 +1,8 @@
 <template>
 <div id="app">
   <div id="nav">
-    <router-link to="/"> Home </router-link> |
-    <router-link id="AboutLink" to="/about"> About </router-link>
+    <!-- <router-link to="/"> Home </router-link> -->
+    <!-- Uncomment when there's more than one route -->
   </div>
   <router-view class="animated fadeIn" />
   <div id="arrowUpIconContainer" class="">

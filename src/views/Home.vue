@@ -47,7 +47,7 @@
       <h3>Software Developer, University of Connecticut</h3>
       <h5>Senior Design Project. August 2018 - May 2019</h5>
       <ul>
-        <li>Created a server-less web application using Amazon Web Services</li>
+        <li>Created a server-less web application using AWS</li>
         <li>Developed and integrated REST API with API Gateway and Lambda</li>
         <li>Stored and retrieved user data using DynamoDB and a HTML5, Bootstrap, and JQuery frontend</li>
       </ul>
