@@ -1,0 +1,26 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        run: npm install
+
+      - name: Generate site
+        run: npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist

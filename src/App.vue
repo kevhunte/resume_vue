@@ -1,10 +1,8 @@
 <template>
 <div id="app">
   <div id="nav">
-    <!-- <router-link to="/"> Home </router-link> -->
-    <!-- Uncomment when there's more than one route -->
   </div>
-  <router-view class="animated fadeIn" />
+  <Home />
   <div id="arrowUpIconContainer" class="">
     <a href="#"><img src="@/assets/arrowUp.png" alt="topOfPage"></a>
   </div>
@@ -12,12 +10,13 @@
 </template>
 
 <script>
+import Home from '@/views/Home'
+
 export default {
   name: 'app',
   components: {
-    //Footer
-  },
-  mounted() {}
+    Home
+  }
 }
 </script>
 

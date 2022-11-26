@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/dist
 
 #secrets, causing issues with codepipeline. Not that big of a deal
 #endpoints.js

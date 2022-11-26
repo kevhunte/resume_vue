@@ -11,7 +11,7 @@
     <p>
       For more information about my <a href="#experienceContainer">experience</a>, <a href="#edContainer">education</a>, and <a href="#projectsContainer">personal projects</a>, view below.
     </p>
-    <a href="/Resume.pdf" target="_blank" rel="noopener"><button type="button" name="button">Resume</button></a>
+    <a :href="navigateTo('/Resume.pdf')" target="_blank" rel="noopener"><button type="button" name="button">Resume</button></a>
     <a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener"><button type="button" name="button">Contact</button></a>
   </div>
 
@@ -116,8 +116,9 @@
 
 <script>
 import projectsURL from '@/endpoints'
+import { navigateTo } from '@/util/utils'
 export default {
-  name: 'home',
+  name: 'Home',
   components: {},
   data() {
     return {
@@ -146,7 +147,11 @@ export default {
       //console.error(`Error calling projects endpoint: \n${e}`);
     }
   },
-  methods: {}
+  methods: {
+    navigateTo(url) {
+      return navigateTo(url)
+    }
+  }
 };
 </script>
 
