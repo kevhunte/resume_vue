@@ -1,8 +1,7 @@
 <template>
 <div id="app">
-  <div id="nav">
-  </div>
-  <Home />
+  <Navigation />
+  <router-view class="animated fadeIn" />
   <div id="arrowUpIconContainer" class="">
     <a href="#"><img src="@/assets/arrowUp.png" alt="topOfPage"></a>
   </div>
@@ -10,12 +9,12 @@
 </template>
 
 <script>
-import Home from '@/views/Home'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
   components: {
-    Home
+    Navigation
   }
 }
 </script>
@@ -50,27 +49,10 @@ body {
   /* margin: 30px auto 0 auto; */
 }
 
-#nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  padding: 1rem 0;
-  background-color: #2c3e50;
-}
-
-#nav>a {
-  color: white;
-}
-
 a {
   font-weight: bold;
   text-decoration: none;
   color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 
 p {
@@ -78,11 +60,13 @@ p {
 }
 
 .page {
-  position: absolute;
-  top: 50px;
-  width: inherit;
-  display: block;
-  padding: 15px 1rem 0 1rem;
+  padding: 4em 1rem 0 1rem;
+}
+
+@media (min-width: 650px) {
+  .resHeaders {
+    margin: 0 calc(25% - 10px);
+  }
 }
 
 .animated {
@@ -114,8 +98,23 @@ p {
   }
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 </style>
