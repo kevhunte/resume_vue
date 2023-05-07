@@ -5,13 +5,12 @@
 
   <div id="sumContainer" class="containers" style="margin: 0 3rem;">
     <p>
-      Security conscious fullstack developer. <br />
+      Security conscious, full stack developer. <br />
       Language and cloud agnostic.<br />
     </p>
     <p>
       Click each option to learn more about my <router-link to="/experience">experience</router-link>, <router-link to="/education">education</router-link>, and <router-link to="/projects">projects</router-link>.
     </p>
-    <a :href="navigateTo('/Resume.pdf')" target="_blank" rel="noopener"><button type="button" name="button">Resume</button></a>
     <a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener"><button type="button" name="button">Contact</button></a>
   </div>
 
