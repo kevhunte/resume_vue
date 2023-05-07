@@ -1,9 +1,9 @@
 <template>
 <div id="app">
   <Navigation />
-  <router-view class="animated fadeIn" />
+  <router-view class="animated fadeIn"></router-view>
   <div id="arrowUpIconContainer" class="">
-    <a href="#"><img src="@/assets/arrowUp.png" alt="topOfPage"></a>
+    <a href="#"><img src="./assets/arrowUp.png" alt="topOfPage"></a>
   </div>
 </div>
 </template>
@@ -13,8 +13,16 @@ import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      link: ''
+    }
+  },
   components: {
     Navigation
+  },
+  mounted() {
+    this.link = `${window.location.href}/#`
   }
 }
 </script>

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import projectsURL from '@/endpoints'
+import projectsURL from '../endpoints'
 export default {
     name: 'Projects',
     data() {

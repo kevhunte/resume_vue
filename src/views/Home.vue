@@ -25,19 +25,13 @@
 </template>
 
 <script>
-import { navigateTo } from '@/util/utils'
 export default {
   name: 'Home',
   components: {},
   data() {
     return {}
   },
-  mounted() {},
-  methods: {
-    navigateTo(url) {
-      return navigateTo(url)
-    }
-  }
+  mounted() {}
 };
 </script>
 
