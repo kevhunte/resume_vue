@@ -2,7 +2,7 @@
     <div>
         <div class="nav" v-if="!isMobile">
             <router-link to="/"> Home </router-link>
-            <router-link to="/experience"> Experience </router-link>
+            <!-- <router-link to="/experience"> Experience </router-link> -->
             <router-link to="/education"> Education </router-link>
             <router-link to="/projects"> Projects </router-link>
             <router-link to="/services"> Services </router-link>
@@ -11,7 +11,7 @@
             <button class="dropbtn">Menu</button>
             <div :class="{ 'dropdown-content': true, 'dropdown-content_pressed': isMenuOpen }">
                 <router-link to="/"> Home </router-link>
-                <router-link to="/experience"> Experience </router-link>
+                <!-- <router-link to="/experience"> Experience </router-link> -->
                 <router-link to="/education"> Education </router-link>
                 <router-link to="/projects"> Projects </router-link>
                 <router-link to="/services"> Services </router-link>

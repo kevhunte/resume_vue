@@ -9,7 +9,9 @@
       Language and cloud agnostic.<br />
     </p>
     <p>
-      Click each option to learn more about my <router-link to="/experience">experience</router-link>, <router-link to="/education">education</router-link>, and <router-link to="/projects">projects</router-link>.
+      Click each option to learn more about my 
+      <!-- <router-link to="/experience">experience</router-link>,  -->
+      <router-link to="/education">education</router-link> and <router-link to="/projects">projects</router-link>.
     </p>
     <a href="https://www.linkedin.com/in/kevin-hunte-818759115/" target="_blank" rel="noopener"><button type="button" name="button">Contact</button></a>
   </div>
