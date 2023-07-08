@@ -1,30 +1,30 @@
 <template>
-<div id="app">
-  <Navigation />
-  <router-view class="animated fadeIn"></router-view>
-  <div id="arrowUpIconContainer" class="">
-    <a href="#"><img src="./assets/arrowUp.png" alt="topOfPage"></a>
+  <div id="app">
+    <Navigation />
+    <router-view class="animated fadeIn"></router-view>
+    <div id="arrowUpIconContainer" class="">
+      <a href="#"><img src="./assets/arrowUp.png" alt="topOfPage" /></a>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
+import Navigation from "./components/Navigation.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
-      link: ''
-    }
+      link: "",
+    };
   },
   components: {
-    Navigation
+    Navigation,
   },
   mounted() {
-    this.link = `${window.location.href}/#`
-  }
-}
+    this.link = `${window.location.href}/#`;
+  },
+};
 </script>
 
 <style>
@@ -43,12 +43,12 @@ body {
   margin: 0 1rem 1rem 0;
 }
 
-#arrowUpIconContainer>a>img {
+#arrowUpIconContainer > a > img {
   width: 1.5rem;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -84,8 +84,7 @@ p {
   animation-fill-mode: both;
 }
 
-@media (print),
-(prefers-reduced-motion: reduce) {
+@media (print), (prefers-reduced-motion: reduce) {
   .animated {
     -webkit-animation-duration: 1.5ms !important;
     animation-duration: 1.5ms !important;
@@ -116,6 +115,32 @@ p {
   }
 }
 
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -124,5 +149,23 @@ p {
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+}
+
+.slideInLeft {
+  -webkit-animation-duration: 0.65s;
+  animation-duration: 0.65s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.slideInDown {
+  -webkit-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
 }
 </style>

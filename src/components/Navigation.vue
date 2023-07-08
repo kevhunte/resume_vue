@@ -9,7 +9,7 @@
         </div>
         <div class="nav dropdown" v-else-if="isMobile" @click="toggleMenu">
             <button class="dropbtn">Menu</button>
-            <div :class="{ 'dropdown-content': true, 'dropdown-content_pressed': isMenuOpen }">
+            <div :class="{ 'animated slideInLeft': true, 'dropdown-content': true, 'dropdown-content_pressed': isMenuOpen }">
                 <router-link to="/"> Home </router-link>
                 <!-- <router-link to="/experience"> Experience </router-link> -->
                 <router-link to="/education"> Education </router-link>
@@ -52,7 +52,7 @@ export default {
   right: 0;
   z-index: 5;
   padding: 1rem 0;
-  background-color: #2c3e50;
+  background-color: #2B3A67;
 }
 
 .nav>a {
@@ -61,7 +61,7 @@ export default {
 }
 
 .nav a.router-link-exact-active {
-  color: #42b983;
+  color: #7F6A93;
 }
 
 /* ###### Mobile ##### */
