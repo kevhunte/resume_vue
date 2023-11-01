@@ -4,9 +4,22 @@
       <h2 class="resHeaders">Experience</h2>
 
       <div class="titles">
+        <h3>Software Engineer, Meta</h3>
+        <h5>
+          Rights Management. November 2023 - Present. New
+          York, NY
+        </h5>
+        <ul>
+          <li>
+            Designed, built and maintained systems for managing copyrighted content on Meta's platforms
+          </li>
+        </ul>
+      </div>
+
+      <div class="titles">
         <h3>Software Engineer, Gopuff</h3>
         <h5>
-          Warehousing - Outbound Fulfillment Systems. May 2021 - Current. New
+          Warehousing - Outbound Fulfillment Systems. May 2021 - October 2023. New
           York, NY
         </h5>
         <ul>
